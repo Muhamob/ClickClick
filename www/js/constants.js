@@ -1,6 +1,38 @@
-var Constants = {
-	TINY: ["1", "2", "3", "4"],
-	CLASSIC: ["1", "2", "3", "4", "5"],
-	BIG: ["1", "2", "3", "4", "5", "6"],
-	HUGE: ["1", "2", "3", "4", "5", "6", "7"],
+var TRACKS = {
+	OPENING : {
+		KEY : 'opening',
+		SOURCE : 'sounds/open.mp3',
+		VOLUME : 0.3,
+		LOOP : false
+	},
+	CLOSING : {
+		KEY : 'closing',
+		SOURCE : 'sounds/close.mp3',
+		VOLUME : 0.3,
+		LOOP : false
+	},
+	DOWN : {
+		KEY : 'down',
+		SOURCE : 'sounds/down.mp3',
+		VOLUME : 0.3,
+		LOOP : false
+	},
+	UP : {
+		KEY : 'up',
+		SOURCE : 'sounds/up.mp3',
+		VOLUME : 0.3,
+		LOOP : false
+	},
+	BACKGROUND : {
+		KEY : 'background',
+		SOURCE : 'sounds/background.mp3',
+		VOLUME : 0.3,
+		LOOP : true
+	},
+	CLICK : {
+		KEY : 'click',
+		SOURCE : 'sounds/click.mp3',
+		VOLUME : 0.3,
+		LOOP : false
+	},
 }
