@@ -10,8 +10,10 @@ function Cell(type, x, y, z) {
 }
 
 Cell.prototype.init = function() {
+    var texloader = new THREE.TextureLoader();
+    var tex=texloader.load("./img/chip.png");
     var materialTop = new THREE.MeshLambertMaterial({
-        map: THREE.ImageUtils.loadTexture('./img/chip.png'),
+        map: tex,
     });
     var materialSide = new THREE.MeshPhongMaterial({
         //wireframe: true,

@@ -12,8 +12,12 @@ function Scene(height, width) {
     this.audioPlayer;
 }
 
+Scene.prototype.getRenderer = function(){
+    return this.renderer;
+}
+
 Scene.prototype.getScene = function(){
-    return this.scene();
+    return this.scene;
 }
 
 Scene.prototype.getCamera = function() {
@@ -109,12 +113,6 @@ Scene.prototype.addRenderer = function() {
 
 Scene.prototype.render = function() {
     this.renderer.render(this.scene, this.camera);
-}
-
-Scene.prototype.resizeWindow = function() {
-	this.renderer.setSize(window.innerWidth, window.innerHeight);
-	this.camera.aspect = window.innerWidth / window.innerHeight;
-	this.camera.updateProjectionMatrix();
 }
 
 Scene.prototype.letRefreshRotation = function() {

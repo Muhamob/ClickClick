@@ -9,8 +9,10 @@ function Glow(x, y, z) {
 }
 
 Glow.prototype.init = function() {
+    var texloader = new THREE.TextureLoader();
+    var tex=texloader.load("./img/glow.png");
     this.mesh = new THREE.Mesh(new THREE.CircleGeometry(10, 32), new THREE.MeshLambertMaterial({
-        map: THREE.ImageUtils.loadTexture('./img/glow.png'),
+        map: tex,
     }));
     this.mesh.geometry.applyMatrix(new THREE.Matrix4().makeRotationX(-Math.PI / 2));
     this.mesh.position.set(this.position.x, this.position.y, this.position.z);

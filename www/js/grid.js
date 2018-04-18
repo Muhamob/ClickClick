@@ -28,6 +28,10 @@ Grid.prototype.init = function() {
     return dx;
 }
 
+Grid.prototype.removeCell = function(cell) {
+    
+}
+
 Grid.prototype.getGlows = function(){
     return this.glows;
 }
