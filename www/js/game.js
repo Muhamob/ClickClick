@@ -1,4 +1,5 @@
 function Game() {
+<<<<<<< HEAD
     this.windowField;
     this.settings;
     this.activeWindow;
@@ -31,3 +32,9 @@ Game.prototype.init = function() {
 //         return activeWindows[0];
 //     }
 // }
+=======
+}
+
+Game.prototype. = function() {
+}
+>>>>>>> 4a6da7fd55ba298eb8dba9545568de5db70df53a
