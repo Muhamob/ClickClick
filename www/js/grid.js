@@ -4,7 +4,6 @@ function Grid(height, width) {
     this.openedCells = Array();
     this.cells = Array();
     this.glows = Array();
-<<<<<<< HEAD
     this.dx = 20;
     this.dy = 20;
     this.init();
@@ -13,13 +12,6 @@ function Grid(height, width) {
 Grid.prototype.init = function() {
     var dx = this.dx;
 	var dz = this.dy;
-=======
-}
-
-Grid.prototype.init = function() {
-    var dx = 20;
-	var dz = 20;
->>>>>>> 4a6da7fd55ba298eb8dba9545568de5db70df53a
 	var x = 0;
 	var y = 0;
 	var z = 0;
@@ -36,19 +28,11 @@ Grid.prototype.init = function() {
 		z -= dz;
 		x = 0;
 	}
-<<<<<<< HEAD
 }
 
-Grid.prototype.removeCell = function(cell) {
-
-=======
-    return dx;
-}
-
-Grid.prototype.removeCell = function(cell) {
-    
->>>>>>> 4a6da7fd55ba298eb8dba9545568de5db70df53a
-}
+// Grid.prototype.removeCell = function(cell) {
+//
+// }
 
 Grid.prototype.getGlows = function(){
     return this.glows;
